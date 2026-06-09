@@ -136,10 +136,9 @@ export default function Auth() {
                   />
                 </TouchableOpacity>
               </View>
-
-              <TouchableOpacity style={styles.submitButton}>
-                <Text style={styles.submitText}>Sign Up</Text>
-              </TouchableOpacity>
+          <TouchableOpacity style={styles.submitButton} onPress={() => router.push('/(client)/home' as any)}>
+            <Text style={styles.submitText}>Sign Up</Text>
+          </TouchableOpacity>
             </View>
           )}
 
@@ -181,8 +180,8 @@ export default function Auth() {
                 <Text style={styles.forgotText}>Forgotten Password?</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.submitButton}>
-                <Text style={styles.submitText}>Login</Text>
+             <TouchableOpacity style={styles.submitButton} onPress={() => router.push('/(client)/home' as any)}>
+              <Text style={styles.submitText}>Login</Text>
               </TouchableOpacity>
             </View>
           )}
