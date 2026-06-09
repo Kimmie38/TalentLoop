@@ -24,7 +24,7 @@ const tabs: TabItem[] = [
 ];
 
 interface BottomTabBarProps {
-  activeTab: TabName;
+  activeTab: TabName | null;  // ← allow null
   onTabPress: (tab: TabName) => void;
   onFabPress?: () => void;
 }

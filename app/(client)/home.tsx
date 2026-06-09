@@ -125,7 +125,7 @@ export default function ClientHome() {
         <BottomTabBar
         activeTab={activeTab}
         onTabPress={handleTabPress}
-        onFabPress={() => console.log('FAB pressed')}
+        onFabPress={() => router.push('/post-job')}
       />
 
     </SafeAreaView>
